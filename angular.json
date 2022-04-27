@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "blockpit-app": "apps/blockpit-app",
-    "blockpit-app-e2e": "apps/blockpit-app-e2e"
+    "blockpit-app-e2e": "apps/blockpit-app-e2e",
+    "design-system": "libs/design-system"
   }
 }
