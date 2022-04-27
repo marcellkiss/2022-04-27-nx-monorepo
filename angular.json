@@ -4,6 +4,7 @@
     "blockpit-app": "apps/blockpit-app",
     "blockpit-app-e2e": "apps/blockpit-app-e2e",
     "design-system-atoms": "libs/design-system/atoms",
+    "design-system-molecules": "libs/design-system/molecules",
     "report-feature-generate": "libs/report/feature-generate",
     "report-shell": "libs/report/shell",
     "transaction-feature-overview": "libs/transaction/feature-overview",

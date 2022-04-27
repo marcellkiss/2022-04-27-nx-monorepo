@@ -1,0 +1,23 @@
+{
+  "root": "libs/design-system/molecules",
+  "sourceRoot": "libs/design-system/molecules/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/design-system/molecules/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design-system/molecules"],
+      "options": {
+        "jestConfig": "libs/design-system/molecules/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["type:ui", "ui-type:molecules"]
+}
