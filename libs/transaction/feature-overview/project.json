@@ -1,0 +1,23 @@
+{
+  "root": "libs/transaction/feature-overview",
+  "sourceRoot": "libs/transaction/feature-overview/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/transaction/feature-overview/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/transaction/feature-overview"],
+      "options": {
+        "jestConfig": "libs/transaction/feature-overview/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["type:feature"]
+}

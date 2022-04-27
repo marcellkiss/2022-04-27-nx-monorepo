@@ -15,7 +15,13 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@blockpit-nx-example/design-system": ["libs/design-system/src/index.ts"]
+      "@blockpit-nx-example/design-system": ["libs/design-system/src/index.ts"],
+      "@blockpit-nx-example/transaction/feature-overview": [
+        "libs/transaction/feature-overview/src/index.ts"
+      ],
+      "@blockpit-nx-example/transaction/shell": [
+        "libs/transaction/shell/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

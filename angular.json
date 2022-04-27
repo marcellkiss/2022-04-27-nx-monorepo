@@ -3,6 +3,8 @@
   "projects": {
     "blockpit-app": "apps/blockpit-app",
     "blockpit-app-e2e": "apps/blockpit-app-e2e",
-    "design-system": "libs/design-system"
+    "design-system": "libs/design-system",
+    "transaction-feature-overview": "libs/transaction/feature-overview",
+    "transaction-shell": "libs/transaction/shell"
   }
 }

@@ -1,23 +1,23 @@
 {
-  "root": "libs/design-system",
-  "sourceRoot": "libs/design-system/src",
+  "root": "libs/transaction/shell",
+  "sourceRoot": "libs/transaction/shell/src",
   "projectType": "library",
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["libs/design-system/**/*.ts"]
+        "lintFilePatterns": ["libs/transaction/shell/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/libs/design-system"],
+      "outputs": ["coverage/libs/transaction/shell"],
       "options": {
-        "jestConfig": "libs/design-system/jest.config.js",
+        "jestConfig": "libs/transaction/shell/jest.config.js",
         "passWithNoTests": true
       }
     }
   },
-  "tags": ["type:ui"]
+  "tags": ["type:shell"]
 }
