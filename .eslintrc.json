@@ -17,8 +17,12 @@
                 "onlyDependOnLibsWithTags": ["type:ui"]
               },
               {
+                "sourceTag": "ui-type:atoms",
+                "notDependOnLibsWithTags": ["ui-type:molecules"]
+              },
+              {
                 "sourceTag": "ui-type:molecules",
-                "onlyDependOnLibsWithTags": []
+                "onlyDependOnLibsWithTags": ["ui-type:atoms"]
               },
               {
                 "sourceTag": "*",
