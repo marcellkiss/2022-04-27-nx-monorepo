@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
-import { FeatureOverviewComponent } from '@blockpit-nx-example/transaction/feature-overview';
+import { FeatureOverviewComponent, FeatureOverviewModule } from '@blockpit-nx-example/transaction/feature-overview';
 
 const routes: Route[] = [
   {
@@ -12,7 +12,11 @@ const routes: Route[] = [
 
 @NgModule({
   declarations: [],
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [
+    CommonModule,
+    FeatureOverviewModule,
+    RouterModule.forChild(routes)
+  ],
   exports: [],
   providers: [],
 })

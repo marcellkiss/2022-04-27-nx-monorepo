@@ -1,0 +1,23 @@
+{
+  "root": "libs/design-system/atoms",
+  "sourceRoot": "libs/design-system/atoms/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/design-system/atoms/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design-system/atoms"],
+      "options": {
+        "jestConfig": "libs/design-system/atoms/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["type:ui", "ui-type:atoms"]
+}
