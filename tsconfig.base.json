@@ -16,6 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@blockpit-nx-example/design-system": ["libs/design-system/src/index.ts"],
+      "@blockpit-nx-example/report/feature-generate": [
+        "libs/report/feature-generate/src/index.ts"
+      ],
+      "@blockpit-nx-example/report/shell": ["libs/report/shell/src/index.ts"],
       "@blockpit-nx-example/transaction/feature-overview": [
         "libs/transaction/feature-overview/src/index.ts"
       ],

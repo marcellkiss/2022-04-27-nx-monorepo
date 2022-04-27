@@ -18,6 +18,12 @@ const routes: Route[] = [
     //   return lib.
     // })
   },
+  {
+    path: 'report',
+    loadChildren: async () => {
+      return (await import('@blockpit-nx-example/report/shell')).ReportShellModule
+    }
+  }
 ];
 
 @NgModule({

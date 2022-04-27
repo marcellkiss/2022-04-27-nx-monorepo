@@ -1,0 +1,23 @@
+{
+  "root": "libs/report/shell",
+  "sourceRoot": "libs/report/shell/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/report/shell/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/report/shell"],
+      "options": {
+        "jestConfig": "libs/report/shell/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": ["type:shell"]
+}
