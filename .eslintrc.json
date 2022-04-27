@@ -17,6 +17,10 @@
                 "onlyDependOnLibsWithTags": ["type:ui"]
               },
               {
+                "sourceTag": "ui-type:molecules",
+                "onlyDependOnLibsWithTags": []
+              },
+              {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
               }
