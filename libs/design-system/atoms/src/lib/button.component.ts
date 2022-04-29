@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'bp-button',
-  template: `<button>submit</button>`,
+  template: `<button>{{ text }}</button>`,
   styles: [
     `
       button {
@@ -11,4 +11,6 @@ import { Component } from '@angular/core';
     `,
   ],
 })
-export class ButtonComponent {}
+export class ButtonComponent {
+  @Input() text = 'default button text';
+}
