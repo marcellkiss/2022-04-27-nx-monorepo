@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { Route, RouterModule } from '@angular/router';
+import { PerformanceComponent } from './performance/performance.component';
+import { TableComponent } from './performance/table.component';
 
 const routes: Route[] = [
   // {
@@ -21,13 +23,18 @@ const routes: Route[] = [
   {
     path: 'report',
     loadChildren: async () => {
-      return (await import('@blockpit-nx-example/report/shell')).ReportShellModule
-    }
-  }
+      return (await import('@blockpit-nx-example/report/shell'))
+        .ReportShellModule;
+    },
+  },
+  {
+    path: 'performance',
+    component: PerformanceComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [PerformanceComponent, TableComponent],
   imports: [CommonModule, RouterModule.forRoot(routes)],
   exports: [RouterModule],
   providers: [],
