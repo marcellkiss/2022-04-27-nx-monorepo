@@ -10,3 +10,7 @@ InsiderUser:
 </pre>
 
 {{ onUpdate() }}
+
+<div class="transaction" *ngFor="let transaction of transactions">
+  {{ formattedAmounts[transaction.id] }};
+</div>
