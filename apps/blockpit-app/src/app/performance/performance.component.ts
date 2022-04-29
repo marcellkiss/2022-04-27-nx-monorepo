@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Transaction, User } from './table.component';
+import { TransactionService } from './transaction.service';
 
 @Component({
   selector: 'blockpit-nx-example-performance',
@@ -14,23 +15,13 @@ export class PerformanceComponent implements OnInit {
     birthday: new Date().toISOString(),
   };
 
-  public transcations: Transaction[] = [
-    {
-      id: '1',
-      amount: 123,
-      type: 'typeA',
-    },
-    {
-      id: '2',
-      amount: 222,
-      type: 'typeB',
-    },
-    {
-      id: '3',
-      amount: 333,
-      type: 'typeC',
-    },
-  ];
+  public transactions!: Transaction[];
+
+  constructor(private transactionService: TransactionService) {
+    this.transactionService.getTransactions().subscribe((transactions) => {
+      this.transactions = transactions;
+    });
+  }
 
   ngOnInit(): void {
     setTimeout(() => {

@@ -8,6 +8,16 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 80,
+      lines: 80,
+      statements: 80,
+    },
+  },
+  coverageReporters: ['text', 'html'],
+  collectCoverage: true,
   coverageDirectory: '../../coverage/apps/blockpit-app',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': 'jest-preset-angular',
