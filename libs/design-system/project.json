@@ -1,0 +1,56 @@
+{
+  "root": "libs/design-system",
+  "sourceRoot": "libs/design-system/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/design-system/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design-system"],
+      "options": {
+        "jestConfig": "libs/design-system/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "storybook": {
+      "executor": "@nrwl/storybook:storybook",
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "port": 4400,
+        "config": {
+          "configFolder": "libs/design-system/.storybook"
+        },
+        "projectBuildConfig": "design-system:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    },
+    "build-storybook": {
+      "executor": "@nrwl/storybook:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "uiFramework": "@storybook/angular",
+        "outputPath": "dist/storybook/design-system",
+        "config": {
+          "configFolder": "libs/design-system/.storybook"
+        },
+        "projectBuildConfig": "design-system:build-storybook"
+      },
+      "configurations": {
+        "ci": {
+          "quiet": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

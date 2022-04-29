@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@blockpit-nx-example/design-system": ["libs/design-system/src/index.ts"],
       "@blockpit-nx-example/design-system/atoms": [
         "libs/design-system/atoms/src/index.ts"
       ],

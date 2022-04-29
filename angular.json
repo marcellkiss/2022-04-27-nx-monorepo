@@ -3,6 +3,7 @@
   "projects": {
     "blockpit-app": "apps/blockpit-app",
     "blockpit-app-e2e": "apps/blockpit-app-e2e",
+    "design-system": "libs/design-system",
     "design-system-atoms": "libs/design-system/atoms",
     "design-system-molecules": "libs/design-system/molecules",
     "report-feature-generate": "libs/report/feature-generate",
